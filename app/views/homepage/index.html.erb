@@ -3,7 +3,7 @@
         <h1 class="animated fadeInDown"><big>MyCookBook</big></h1>
 		<h3 class="animated fadeInDown">An online recipe repository!</h3>
 		<br>
-		<a href="#" class="btn btn-primary btn-xl page-scroll">Explore</a>
+		<a href="#explore" class="btn btn-primary btn-xl page-scroll">Explore</a>
 	</div>
 </div>
 
@@ -39,28 +39,29 @@
                     <div class="service-box">
                         <img src="http://i.imgur.com/yfEIQ8Q.png"></i>
                         <h3>Appetizers</h3>
-                        <p>Get those taste buds excited!</p>
+                        <%= link_to "Get those taste buds excited!", explore_path(course_id: 1), class: "course_link" %>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="http://i.imgur.com/Xj5Fz6Y.png"></i>
                         <h3>Main Courses</h3>
-                        <p>The main attraction!</p>
+                        <%= link_to "The main attraction!", explore_path(course_id: 2), class: "course_link" %>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="http://i.imgur.com/b1586EN.png"></i>
                         <h3>Desserts</h3>
-                        <p>Something sweet to top it off!</p>
+                        <%= link_to "Something sweet to top it off!", explore_path(course_id: 3), class: "course_link" %>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="http://i.imgur.com/ra3mu77.png"></i>
                         <h3>Dietary-Focused</h3>
-                        <p>Something for everyone!</p>
+                        <%= link_to "Something for everyone!", explore_path(course_id: 4), class: "course_link" %>
+                        <!-- links to drinks instead -->
                     </div>
                 </div>
             </div>

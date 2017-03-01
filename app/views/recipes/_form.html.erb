@@ -32,7 +32,7 @@
   </div>
 
   <div class="field">
-    <%= f.select(:course_id, @courses.collect { |c| [c.name, c.id]}, {include_blank: "Select a Course Type"} %>
+    <%= f.select(:course_id, @courses.collect { |c| [c.name, c.id]}, {include_blank: "Select a Course Type"}) %>
   </div>
 
   <div class="actions">

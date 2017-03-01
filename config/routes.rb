@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+	get 'explore' => "homepage#recipes_by_course"
+
+
   resources :courses
   resources :recipes
   root 'homepage#index'

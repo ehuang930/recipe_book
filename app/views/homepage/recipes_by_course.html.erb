@@ -1,0 +1,9 @@
+<h3>All <% @course.name %> Recipes</h3>
+
+<div class="row">
+<% @recipes_by_course.each do |recipe| %>
+	<div class="col-md-4">
+		<p><strong><%= recipe.name %></strong></p>
+		<p><%= recipe.description %></p>
+	</div>
+<% end %>
