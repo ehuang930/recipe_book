@@ -1,3 +1,11 @@
+.course_link, .course_link:visited{
+	color: black;
+}
+
+.btn-primary, .btn-primary:visited {
+	color: white;
+} 
+
 .header {
 	height: 100vh;
 	background-image: url("http://clv.h-cdn.co/assets/15/15/1600x800/landscape-1428345698-459151475x.jpg");
@@ -95,7 +103,7 @@
 	align-content: center;
 }
 
-#explore {
+#explore-info {
 	background-image: url(https://static01.nyt.com/images/2015/08/14/dining/14ROASTEDSALMON/14ROASTEDSALMON-superJumbo.jpg);
 	background-size: 100%;
 	padding-top: 60px;
@@ -105,16 +113,16 @@
 	font-family: 'Raleway', sans-serif;
 }
 
-#explore .container {
+#explore-info .container {
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 25px;
 }
 
-#explore h2 {
+#explore-info h2 {
 	margin-bottom: -10px;
 }
 
-#explore hr {
+#explore-info hr {
 	border: 1px solid #000000;
 }
 

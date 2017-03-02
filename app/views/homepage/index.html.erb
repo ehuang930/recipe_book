@@ -9,14 +9,14 @@
 
 
 <section class="info">
-    <div class="container">
+    <div class="container" id="explore">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <img src="http://i.imgur.com/V2rGlY5.png">
                 <h2 class="section-heading">Your favorite recipes at your fingertips!</h2>
                 <hr class="light">
                 <h4>MyCookBook is your one stop repository for all things food-related.<br> Find, store and edit your favorite recipes without having to jump from site to site.
-                <hr><p>Cultivate your inner chef!</p></h4>
+                <hr> Cultivate your inner chef!</h4>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
 
     <br><br>
 
-<section id="explore">
+<section id="explore-info">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -39,55 +39,25 @@
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <img src="http://i.imgur.com/yfEIQ8Q.png"></i>
-                    <h3><b>Appetizers</b></h3>
+                    <h3><b><%= link_to "Appetizers", explore_path(course_id: 1), class: "course_link" %></b></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <img src="http://i.imgur.com/Xj5Fz6Y.png"></i>
-                    <h3><b>Main Courses</b></h3>
+                    <h3><b><%= link_to "Main Courses", explore_path(course_id: 2), class: "course_link" %></b></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <img src="http://i.imgur.com/b1586EN.png"></i>
-                    <h3><b>Desserts</b></h3>
+                    <h3><b><%= link_to "Desserts", explore_path(course_id: 3), class: "course_link" %></b></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <img src="http://i.imgur.com/ra3mu77.png"></i>
-                    <h3><b>Dietary-Focused</b></h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="http://i.imgur.com/yfEIQ8Q.png"></i>
-                        <h3>Appetizers</h3>
-                        <%= link_to "Get those taste buds excited!", explore_path(course_id: 1), class: "course_link" %>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="http://i.imgur.com/Xj5Fz6Y.png"></i>
-                        <h3>Main Courses</h3>
-                        <%= link_to "The main attraction!", explore_path(course_id: 2), class: "course_link" %>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="http://i.imgur.com/b1586EN.png"></i>
-                        <h3>Desserts</h3>
-                        <%= link_to "Something sweet to top it off!", explore_path(course_id: 3), class: "course_link" %>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="http://i.imgur.com/ra3mu77.png"></i>
-                        <h3>Dietary-Focused</h3>
-                        <%= link_to "Something for everyone!", explore_path(course_id: 4), class: "course_link" %>
-                        <!-- links to drinks instead -->
-                    </div>
+                    <h3><b><%= link_to "Dietary-Focused!", explore_path(course_id: 4), class: "course_link" %></b></h3>
                 </div>
             </div>
         </div>
